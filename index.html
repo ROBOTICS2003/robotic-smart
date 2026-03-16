@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Robotics Lab | Angel k Baby</title>
+<style>
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  margin:0;
+  background:#0f172a;
+  color:white;
+}
+
+/* HEADER */
+header{
+  padding:25px;
+  background:#020617;
+  text-align:center;
+  border-bottom:2px solid #1e293b;
+}
+header h1{
+  font-size:32px;
+}
+header p{
+  color:#94a3b8;
+}
+
+/* SIDEBAR */
+.sidebar{
+  position:fixed;
+  top:0;
+  left:0;
+  height:100%;
+  width:230px;
+  background:#020617;
+  padding-top:40px;
+  border-right:2px solid #1e293b;
+}
+.sidebar a{
+  display:block;
+  color:#cbd5f5;
+  padding:14px 20px;
+  text-decoration:none;
+  font-weight:bold;
+}
+.sidebar a:hover{
+  background:#1e293b;
+}
+
+/* MAIN */
+.main{
+  margin-left:230px;
+  padding:40px;
+}
+
+/* DASHBOARD */
+.dashboard{
+  display:flex;
+  gap:20px;
+  margin-top:20px;
+}
+.box{
+  flex:1;
+  background:#1e293b;
+  padding:25px;
+  border-radius:10px;
+  text-align:center;
+}
+.box h2{
+  font-size:35px;
+}
+
+/* TASK CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+  margin-top:30px;
+}
+.card{
+  background:#1e293b;
+  padding:25px;
+  border-radius:10px;
+  transition:0.3s;
+  box-shadow:0 6px 15px rgba(0,0,0,0.3);
+}
+.card:hover{
+  transform:translateY(-5px);
+}
+button{
+  margin-top:10px;
+  background:#3b82f6;
+  border:none;
+  color:white;
+  padding:10px 18px;
+  border-radius:6px;
+  cursor:pointer;
+  font-size:14px;
+}
+button:hover{
+  background:#2563eb;
+}
+
+/* FOOTER */
+footer{
+  margin-top:40px;
+  text-align:center;
+  color:#94a3b8;
+  border-top:1px solid #1e293b;
+  padding-top:20px;
+}
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <a href="#project">💡 Smart Home IoT</a>
+  <a href="#task1">🚗 Task 1</a>
+  <a href="#task2">🌓 Task 2</a>
+  <a href="#task3">💡 Task 3</a>
+  <a href="#task4">🧩 Task 4</a>
+  <a href="#task5">🧩 Task 5</a>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+<header>
+  <h1>Robotics Lab Portfolio</h1>
+  <p>Angel K Baby | ROBOTICS2003</p>
+</header>
+
+<h2>Welcome to Robotics Lab 👋</h2>
+<p>This portfolio shows my Arduino robotics simulations and IoT projects created using Wokwi.</p>
+
+<!-- DASHBOARD -->
+<div class="dashboard">
+  <div class="box">
+    <h2>1</h2>
+    <p>Project</p>
+  </div>
+  <div class="box">
+    <h2>5</h2>
+    <p>Tasks</p>
+  </div>
+</div>
+
+<!-- SMART HOME IOT PROJECT -->
+<h2 id="project" style="margin-top:40px;">💡 Smart Home IoT Project</h2>
+<div class="card">
+  <p>
+    Smart Home IoT system that automatically controls lights and appliances using sensors and Arduino.
+  </p>
+  <a href="https://wokwi.com/projects/457664918023359489" target="_blank">
+    <button>Open Simulation</button>
+  </a>
+</div>
+
+<!-- ROBOTICS TASKS -->
+<h2 style="margin-top:40px;">Robotics Tasks</h2>
+<div class="grid">
+
+  <div class="card" id="task1">
+    <h3>🚗 Task 1 – Basic Output Control</h3>
+    <p>LED indicator system using Arduino.</p>
+    <a href="https://wokwi.com/projects/457668926623284225" target="_blank">
+      <button>Open Simulation</button>
+    </a>
+  </div>
+
+  <div class="card" id="task2">
+    <h3>🌓 Task 2 – Variable Control System</h3>
+    <p>LED brightness automatically changes depending on surrounding light using LDR sensor.</p>
+    <a href="https://wokwi.com/projects/457495083893715969" target="_blank">
+      <button>Open Simulation</button>
+    </a>
+  </div>
+
+  <div class="card" id="task3">
+    <h3>💡 Task 3 – User Interaction</h3>
+    <p>Push button allows the user to manually control the LED.</p>
+    <a href="https://wokwi.com/projects/457669740973780993" target="_blank">
+      <button>Open Simulation</button>
+    </a>
+  </div>
+
+  <div class="card" id="task4">
+    <h3>🧩 Task 4 – Alert or Notification System</h3>
+    <p>System provides sound or alert-based feedback, e.g., buzzer alerts, warning sounds, or notification signals. Useful for safety systems, alarms, or assistance devices.</p>
+    <a href="https://wokwi.com/projects/458689573084143617" target="_blank">
+      <button>Open Simulation</button>
+    </a>
+  </div>
+
+  <div class="card" id="task5">
+    <h3>🧩 Task 5 – Display or Information System</h3>
+    <p>System displays information to the user, e.g., text display, sensor values, or system status. Ideal for dashboards, monitoring panels, or smart devices.</p>
+    <a href="https://wokwi.com/projects/458691596281333761" target="_blank">
+      <button>Open Simulation</button>
+    </a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Angel k Baby | Robotics Lab</p>
+</footer>
+
+</div>
+</body>
+</html>
+
